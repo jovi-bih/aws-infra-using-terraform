@@ -158,7 +158,7 @@ resource "aws_lb_target_group_attachment" "myattach2" {
 resource "aws_lb_listener" "mylist" {
   load_balancer_arn = aws_lb.myalb.arn
   port              = 80
-  protocol          = "HTTPS"
+  protocol          = "HTTP"
 
   default_action {
     type             = "forward"
